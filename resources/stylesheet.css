@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-y: scroll;
+    scrollbar-color: #2c2c2c #000000;
+}
+
 body {
     background-image: url("background.png");
 }
