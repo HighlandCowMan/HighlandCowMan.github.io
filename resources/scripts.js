@@ -1,20 +1,21 @@
 /**
  * Converts temperatures, dude.
- * (Used in the main page temperature convertor)
+ * (Used only in the main page temperature convertor)
  * @param {string} type Either "F_to_C" or "C_to_F"
  */
 function convertTemperature(type) {
-    let celsiusInput = document.getElementById("celsiusInput").value;
-    let fahrenheitInput = document.getElementById("fahrenheitInput").value;
-    let celsiusOutput = document.getElementById("celsiusOutput");
-    let fahrenheitOutput = document.getElementById("fahrenheitOutput");
-
+    let celsiusInputValue = document.getElementById("celsiusInput").value;
+    let fahrenheitInputValue = document.getElementById("fahrenheitInput").value;
+    let celsiusOutputElement = document.getElementById("celsiusOutput");
+    let fahrenheitOutputElement = document.getElementById("fahrenheitOutput");
 
     if (type == "F_to_C") {
-        celsiusOutput.innerText = ((fahrenheitInput - 32) * (5/9)).toFixed(2);
+        if (fahrenheitInputValue == "") {celsiusOutputElement.innerText = "___";}
+        else {celsiusOutputElement.innerText = ((fahrenheitInputValue - 32) * (5/9)).toFixed(2);}
     } 
     else if (type == "C_to_F") {
-        fahrenheitOutput.innerText = ((celsiusInput * (9/5)) + 32).toFixed(2);
+        if (celsiusInputValue == "") {fahrenheitOutputElement.innerText = "___";}
+        else {fahrenheitOutputElement.innerText = ((celsiusInputValue * (9/5)) + 32).toFixed(2);}
     } 
     
     else {
