@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Aptos";
+    src: url(Aptos.ttf);
+}
+
+* {
+    font-family: "Aptos";
+}
+
+.mainDiv {
+    margin: 50px auto 50px auto;
+    padding: 20px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+}
