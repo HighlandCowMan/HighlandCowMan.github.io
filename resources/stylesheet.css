@@ -1,15 +1,74 @@
 @font-face {
     font-family: "Aptos";
-    src: url(Aptos.ttf);
+    src: url("Aptos.ttf");
 }
 
 * {
     font-family: "Aptos";
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("background.png");
+}
+
+h1 {
+    color: #d3378d;
+    font-size: 32px;
+    margin: 0px;
+}
+
+h2 {
+    color: #9e2a6a;
+    font-size: 16px;
+    margin: 0px 0px 20px 0px;
+}
+
+p {
+    color: #a584c4;
+    font-size: 18px;
+    margin: 0px;
+}
+
+a {
+    color: #7476ff;
+    font-size: 18px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+input {
+    width: 50px;
+    color: #eddcff;
+    font-size: 16px;
+    background-color: #4200dd;
+    border: 1px solid #0c000b;
+    border-radius: 3px;
+    margin-bottom: 3px;
+}
+
+table {
+    margin-top: 5px;
+} td {
+    width: 180px;
+}
+
+button {
+    margin-top: 5px;
+    width: 80px;
+    background-color: #21006d;
+    border: 1px solid #0c000b;
+    border-radius: 3px;
+    color: #a584c4;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .mainDiv {
-    margin: 50px auto 50px auto;
+    margin: 80px auto 20px auto;
+    width: 800px;
     padding: 20px;
-    border: 1px solid #333333;
+    border: 2px solid #0c000b;
     border-radius: 5px;
+    background-color: #2b0091;
 }

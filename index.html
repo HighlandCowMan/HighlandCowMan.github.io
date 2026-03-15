@@ -2,13 +2,39 @@
 <html>
     <head>
         <title>Hi</title>
-        <link rel="stylesheet" src="resources/stylesheet.css" type="text/css">
+        <link rel="icon" type="image/png" href="resources/icon.png">
+        <link rel="stylesheet" href="resources/stylesheet.css">
+        <script async src="resources/scripts.js"></script>
     </head>
 
     <body>
         <div class="mainDiv">
             <h1>Hello there</h1>
-            <p>This is just the start of a webpage. Hang on.</p>
+            <h2>This is just the start of something</h2>
+            <p>
+                Hello there. I am the CowMan, the current cow of this site.<br>
+                I'm sure I'll think of something cool to do with this page.
+                <br><br>
+                I seem to be making a lot of webpages lately.<br>
+                Here's my only other public one:
+                <a href="https://highlandcowman.itch.io/" target="_blank">highlandcowman.itch.io</a>
+                <br><br>
+                Yeah... This page won't be as weird as that one.
+                <br><br>
+                Oh, and here's a celsius & fahrenheit convertor:<br>
+                <table>
+                <tr>
+                    <td>
+                        <p><input id="fahrenheitInput"> °F is <span id="celsiusOutput">__</span>°C</p>
+                        <button onclick="convertTemperature('F_to_C')">Run</button>
+                    </td>
+                    <td>
+                        <p><input id="celsiusInput"> °C is <span id="fahrenheitOutput">__</span>°F</p>
+                        <button onclick="convertTemperature('C_to_F')">Run</button>
+                    </td>
+                </tr>
+                </table>
+            </p>
         </div>
     </body>
 </html>
